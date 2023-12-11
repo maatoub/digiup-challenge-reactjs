@@ -27,7 +27,7 @@ const Produits = () => {
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 p-16">
         {produits.map((produit) => (
-          <div className="flex flex-col space-y-2 bg-gray-50 p-4 drop-shadow-lg shadow-lg rounded-md">
+          <div key={produit.id} className="flex flex-col space-y-2 bg-gray-50 p-4 drop-shadow-lg shadow-lg rounded-md">
             <div className="text-xl h-32 text-gray-800 text-center font-extrabold">
               {produit?.title}
             </div>
